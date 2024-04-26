@@ -45,7 +45,7 @@ pipeline {
         }
       }
     }
-    stage('Update Deployment File') {
+    stage('CD Update Deployment File for ARGOCD') {
         environment {
             GIT_REPO_NAME = "CD_MANIFEST_k8s_Deployment"
             GIT_USER_NAME = "BiswajitGen"
