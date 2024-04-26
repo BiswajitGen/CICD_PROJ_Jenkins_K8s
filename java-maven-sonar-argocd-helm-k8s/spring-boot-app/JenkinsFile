@@ -47,7 +47,7 @@ pipeline {
     }
     stage('CD Update Deployment File for ARGOCD') {
         environment {
-            GIT_REPO_NAME = "spring-boot-app-manifests"
+            GIT_REPO_NAME = "CICD_PROJ_Jenkins_K8s"
             GIT_USER_NAME = "BiswajitGen"
         }
 
