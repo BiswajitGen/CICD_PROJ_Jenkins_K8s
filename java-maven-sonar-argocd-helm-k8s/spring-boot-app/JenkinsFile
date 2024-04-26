@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-    stage('Checkout') {
+    stage('GIT Checkout') {
       steps {
         sh 'echo passed'
         //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
@@ -19,7 +19,7 @@ pipeline {
         sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
-    stage('Static Code Analysis') {
+    stage('Static Code Analysis SONARQUBE') {
       environment {
         SONAR_URL = "http://34.239.134.156:9000"
       }
