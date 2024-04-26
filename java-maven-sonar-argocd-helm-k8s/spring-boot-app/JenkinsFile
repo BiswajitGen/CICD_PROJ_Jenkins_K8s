@@ -50,7 +50,6 @@ pipeline {
             GIT_REPO_NAME = "CICD_PROJ_Jenkins_K8s"
             GIT_USER_NAME = "BiswajitGen"
         }
-
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                 sh '''
